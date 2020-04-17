@@ -11,3 +11,5 @@ alias ll="ls -l"
 . /usr/share/autojump/autojump.sh
 
 export LANG=en_US.UTF-8
+
+alias ll="ls -l"
