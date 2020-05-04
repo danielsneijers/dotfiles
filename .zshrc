@@ -8,7 +8,15 @@ prompt pure
 
 alias ll="ls -l"
 
-. /usr/share/autojump/autojump.sh
-
-export LANG=en_US.UTF-8
-
+case `uname` in
+  Darwin)
+    # commands for OS X go here
+    export PATH="/usr/local/sbin:$PATH"
+    [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+  ;;
+  Linux)
+    # commands for Linux go here
+    export LANG=en_US.UTF-8
+    . /usr/share/autojump/autojump.sh
+  ;;
+esac
