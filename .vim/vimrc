@@ -60,6 +60,11 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax on
 colorscheme onedark
 
 filetype on
