@@ -16,3 +16,4 @@ yarn-error.log*
 # vim swap files
 *.swp
 *~
+.vim/.netrwhist
