@@ -12,4 +12,3 @@ alias ll="ls -l"
 
 export LANG=en_US.UTF-8
 
-alias ll="ls -l"
