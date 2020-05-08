@@ -84,3 +84,8 @@ set hlsearch
 
 set backupdir=~/vimtmp//,.
 set directory=~/vimtmp//,.
+
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+
+" Fix files automatically on save
+let g:ale_fix_on_save = 1
