@@ -84,6 +84,13 @@ set hlsearch
 
 set backupdir=~/vimtmp//,.
 set directory=~/vimtmp//,.
+set undodir=~/vimtmp//,.
+
+set path+=**
+set wildmenu
+nnoremap <C-p> :find 
+
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.html.erb'
 
 let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
 
